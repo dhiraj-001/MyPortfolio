@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -14,11 +13,10 @@ import { useRef, useState } from "react";
 export const FloatingDock = ({
   items,
   desktopClassName,
-  mobileClassName,
 }: {
   items: { title: string; icon: React.ReactNode; href: string }[];
   desktopClassName?: string;
-  mobileClassName?: string;
+  // Remove unused mobileClassName
 }) => {
   return (
     <>
@@ -34,7 +32,7 @@ const FloatingDockDesktop = ({
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
 }) => {
-  let mouseX = useMotionValue(Infinity);
+  const mouseX = useMotionValue(Infinity); // Use const instead of let
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
@@ -62,37 +60,37 @@ function IconContainer({
   icon: React.ReactNode;
   href: string;
 }) {
-  let ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null); // Use const instead of let
 
-  let distance = useTransform(mouseX, (val) => {
-    let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+  const distance = useTransform(mouseX, (val) => { // Use const instead of let
+    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 }; // Use const instead of let
 
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [35, 70, 35]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [35, 70, 35]);
+  const widthTransform = useTransform(distance, [-150, 0, 150], [35, 70, 35]); // Use const instead of let
+  const heightTransform = useTransform(distance, [-150, 0, 150], [35, 70, 35]); // Use const instead of let
 
-  let widthTransformIcon = useTransform(distance, [-100, 0, 100], [15, 35, 15]);
-  let heightTransformIcon = useTransform(distance, [-100, 0, 100], [15, 35, 15]);
+  const widthTransformIcon = useTransform(distance, [-100, 0, 100], [15, 35, 15]); // Use const instead of let
+  const heightTransformIcon = useTransform(distance, [-100, 0, 100], [15, 35, 15]); // Use const instead of let
 
-  let width = useSpring(widthTransform, {
+  const width = useSpring(widthTransform, { // Use const instead of let
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let height = useSpring(heightTransform, {
+  const height = useSpring(heightTransform, { // Use const instead of let
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
 
-  let widthIcon = useSpring(widthTransformIcon, {
+  const widthIcon = useSpring(widthTransformIcon, { // Use const instead of let
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let heightIcon = useSpring(heightTransformIcon, {
+  const heightIcon = useSpring(heightTransformIcon, { // Use const instead of let
     mass: 0.1,
     stiffness: 150,
     damping: 12,

@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import { BackgroundGradientDemo } from "./HeroImg";
-import { MovingBorderDemo } from "./Button";
 import { HoverBorderGradientDemo } from "./Btnhover";
 import { FloatingDockDemo } from "./SideSocials";
 

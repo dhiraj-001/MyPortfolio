@@ -4,13 +4,12 @@ import {
   IconBrandGithub,
   IconBrandX,
 } from "@tabler/icons-react";
-import Image from "next/image";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export function FloatingDockDemo() {
   const links = [
     {
-      title: "LInkedin",
+      title: "LinkedIn",
       icon: (
         <FaLinkedin className="h-full w-full text-neutral-500 dark:fill-secondarydk" />
       ),
@@ -37,14 +36,11 @@ export function FloatingDockDemo() {
       ),
       href: "#",
     },
-   
   ];
+
   return (
-<div className="flex items-center justify-center h-[5rem] w-full">
-      <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
-        items={links}
-      />
+    <div className="flex items-center justify-center h-[5rem] w-full">
+      <FloatingDock items={links} />
     </div>
   );
 }

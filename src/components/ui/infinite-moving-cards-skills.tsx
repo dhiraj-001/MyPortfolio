@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { div } from "motion/react-client";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
