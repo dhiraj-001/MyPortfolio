@@ -13,12 +13,12 @@ import img9 from "../img/5968292.png";
 import img10 from "../img/html.png";
 import img11 from "../img/css.png";
 
-const skills = [
+const languages = [
   {
     id: 1,
-    name: "C",
-    designation: "Intermediate",
-    image: img1,
+    name: "JavaScript",
+    designation: "Advanced",
+    image: img9,
   },
   {
     id: 2,
@@ -26,6 +26,27 @@ const skills = [
     designation: "Intermediate",
     image: img2,
   },
+  {
+    id: 9,
+    name: "C",
+    designation: "Advanced",
+    image: img1,
+  },
+  {
+    id: 10,
+    name: "HTML",
+    designation: "Advanced",
+    image: img10,
+  },
+  {
+    id: 12,
+    name: "CSS",
+    designation: "Intermediate",
+    image: img11,
+  }
+];
+
+const frameworks = [
   {
     id: 3,
     name: "Next.js",
@@ -62,30 +83,26 @@ const skills = [
     designation: "Intermediate",
     image: img8,
   },
-  {
-    id: 9,
-    name: "JavaScript",
-    designation: "Intermediate",
-    image: img9,
-  },
-  {
-    id: 10,
-    name: "HTML",
-    designation: "Advanced",
-    image: img10,
-  },
-  {
-    id: 12,
-    name: "CSS",
-    designation: "Intermediate",
-    image: img11,
-  }
 ];
 
 export function AnimatedTooltipPreview() {
   return (
-    <div className="flex flex-row items-center justify-center mb-10 mt-5 w-full">
-      <AnimatedTooltip items={skills} />
+    <div className="p-4 flex items-center flex-col w-full mt-5">
+      <span className="font-head font-bold text-5xl">My Skills</span>
+      <div className="flex flex-col sml:flex-row gap-8 sml:gap-24 mt-10">
+        <div>
+          <h2 className="font-head text-xl font-bold">Languages</h2>
+          <div className="flex flex-row items-center justify-center mb-10 mt-4 w-full">
+            <AnimatedTooltip items={languages} />
+          </div>
+        </div>
+        <div>
+          <h2 className="font-head text-xl font-bold">Frameworks</h2>
+          <div className="flex flex-row items-center justify-center mb-10 mt-4 w-full">
+            <AnimatedTooltip items={frameworks} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
