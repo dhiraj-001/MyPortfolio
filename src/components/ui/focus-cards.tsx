@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
 type Card = {
   title: string;
-  src: string;
+  src: string | StaticImageData;
 };
 
 export const Card = React.memo(
