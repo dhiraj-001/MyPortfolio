@@ -12,6 +12,8 @@ import img8 from "../img/react.png";
 import img9 from "../img/5968292.png";
 import img10 from "../img/html.png";
 import img11 from "../img/css.png";
+import img12 from "../img/node.png";
+import img13 from "../img/express.png";
 
 const languages = [
   {
@@ -83,6 +85,18 @@ const frameworks = [
     designation: "Intermediate",
     image: img8,
   },
+  {
+    id: 11,
+    name: "Node.js",
+    designation: "Intermediate",
+    image: img12,
+  },
+  {
+    id: 12,
+    name: "Express.js",
+    designation: "Intermediate",
+    image: img13,
+  }
 ];
 
 export function AnimatedTooltipPreview() {
