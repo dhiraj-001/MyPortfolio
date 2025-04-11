@@ -17,89 +17,89 @@ import img13 from "../img/express.png";
 import img14 from "../img/mysql.png";
 import img15 from "../img/mongo.png";
 
-const languages = [
-  {
-    id: 1,
-    name: "JavaScript",
-    designation: "Advanced",
-    image: img9,
-  },
-  {
-    id: 2,
-    name: "C++",
-    designation: "Intermediate",
-    image: img2,
-  },
-  {
-    id: 9,
-    name: "C",
-    designation: "Advanced",
-    image: img1,
-  },
-  {
-    id: 10,
-    name: "HTML",
-    designation: "Advanced",
-    image: img10,
-  },
-  {
-    id: 12,
-    name: "CSS",
-    designation: "Intermediate",
-    image: img11,
-  }
-];
+// const languages = [
+//   {
+//     id: 1,
+//     name: "JavaScript",
+//     designation: "Advanced",
+//     image: img9,
+//   },
+//   {
+//     id: 2,
+//     name: "C++",
+//     designation: "Intermediate",
+//     image: img2,
+//   },
+//   {
+//     id: 9,
+//     name: "C",
+//     designation: "Advanced",
+//     image: img1,
+//   },
+//   {
+//     id: 10,
+//     name: "HTML",
+//     designation: "Advanced",
+//     image: img10,
+//   },
+//   {
+//     id: 12,
+//     name: "CSS",
+//     designation: "Intermediate",
+//     image: img11,
+//   }
+// ];
 
-const frameworks = [
-  {
-    id: 3,
-    name: "Next.js",
-    designation: "Beginner",
-    image: img3,
-  },
-  {
-    id: 4,
-    name: "Git",
-    designation: "Intermediate",
-    image: img4,
-  },
-  {
-    id: 5,
-    name: "GitHub",
-    designation: "Advanced",
-    image: img5,
-  },
-  {
-    id: 6,
-    name: "Tailwind CSS",
-    designation: "Advanced",
-    image: img6,
-  },
-  {
-    id: 7,
-    name: "Bootstrap",
-    designation: "Intermediate",
-    image: img7,
-  },
-  {
-    id: 8,
-    name: "React.js",
-    designation: "Intermediate",
-    image: img8,
-  },
-  {
-    id: 11,
-    name: "Node.js",
-    designation: "Intermediate",
-    image: img12,
-  },
-  {
-    id: 12,
-    name: "Express.js",
-    designation: "Intermediate",
-    image: img13,
-  }
-];
+// const frameworks = [
+//   {
+//     id: 3,
+//     name: "Next.js",
+//     designation: "Beginner",
+//     image: img3,
+//   },
+//   {
+//     id: 4,
+//     name: "Git",
+//     designation: "Intermediate",
+//     image: img4,
+//   },
+//   {
+//     id: 5,
+//     name: "GitHub",
+//     designation: "Advanced",
+//     image: img5,
+//   },
+//   {
+//     id: 6,
+//     name: "Tailwind CSS",
+//     designation: "Advanced",
+//     image: img6,
+//   },
+//   {
+//     id: 7,
+//     name: "Bootstrap",
+//     designation: "Intermediate",
+//     image: img7,
+//   },
+//   {
+//     id: 8,
+//     name: "React.js",
+//     designation: "Intermediate",
+//     image: img8,
+//   },
+//   {
+//     id: 11,
+//     name: "Node.js",
+//     designation: "Intermediate",
+//     image: img12,
+//   },
+//   {
+//     id: 12,
+//     name: "Express.js",
+//     designation: "Intermediate",
+//     image: img13,
+//   }
+// ];
 
 const techSkills = [
   {
