@@ -41,7 +41,8 @@ export default {
         mdl: "768px",
         lg: "960px",
         lgl: "1024px",
-        xl: "1280px", 
+        xl: "1280px",
+        xlg: "1600px"
       }
     },
     animation: {
