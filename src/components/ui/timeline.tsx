@@ -14,14 +14,12 @@ interface TimelineEntry {
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [highlight, setHighlight] = useState(false);
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
       setHeight(rect.height);
-      setHighlight(true)
     }
     
   }, [ref]);
