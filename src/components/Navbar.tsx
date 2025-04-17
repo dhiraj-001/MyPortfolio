@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { IconHome, IconMessage, IconSkiJumping, IconUser } from "@tabler/icons-react";
+import { IconHome, IconMessage, IconSkiJumping } from "@tabler/icons-react";
 import { FloatingNav } from "./ui/floating-navbar";
 
 export function FloatingNavDemo() {
