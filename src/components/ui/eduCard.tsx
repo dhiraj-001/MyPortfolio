@@ -10,7 +10,7 @@ function EduCard() {
     >
       <div>
 
-        <div className="m-4 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col lg:flex-row gap-10">
+        <div className="m-4 w-[300px] sml:w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col lg:flex-row gap-10">
           {education.map((edu, i) => (
             <ResumeCard
               key={i}
