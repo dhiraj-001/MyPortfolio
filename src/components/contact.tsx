@@ -2,8 +2,8 @@
 import React from "react";
 
 export function BackgroundBeamsDemo() {
-  return (
-    <div className="w-full bg-[#1b0935] py-2">
+  return ( 
+    <div id="contact" className="w-full bg-[#1b0935] py-2 pb-20">
       <div className="mt-24 z-20 max-w-6xl max-lg:max-w-3xl mx-auto bg-[#2e0249] rounded-lg">
         <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4">
           <div>

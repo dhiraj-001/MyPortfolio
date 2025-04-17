@@ -28,6 +28,7 @@ export const HeroHighlight = ({
   }
   return (
     <div
+    id="home"
       className={cn(
         "relative mdl:h-[40rem] mt-28 mdl:m-auto h-auto flex items-center bg-white dark:bg-background justify-center w-full group",
         containerClassName
