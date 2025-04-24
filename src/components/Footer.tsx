@@ -18,8 +18,8 @@ const FooterSection = () => {
                         </a>
                     ))}
                 </div>
-                <p className="mt-8 text-base leading-6 text-center text-gray-400">
-                    © 2025 Designed by Dhiraj. <a className="text-gray-300" href="https://github.com/dhiraj-001/MyPortfolio">source code</a>
+                <p className="mt-8 text-base leading-6 text-center text-gray-400 font-body">
+                    © 2025 Designed by Dhiraj. <a className="text-gray-300 font-head" href="https://github.com/dhiraj-001/MyPortfolio">source code</a>
                 </p>
             </div>
         </section>
