@@ -129,8 +129,8 @@ const techSkills = [
   {
     category: "Databases",
     skills: [
-      { id: 6, name: "MongoDB", designation: "Databases", image: img14 },
-      { id: 7, name: "MySQL", designation: "Databases", image: img15 }
+      { id: 6, name: "MySQL", designation: "Databases", image: img14 },
+      { id: 7, name: "MongoDB", designation: "Databases", image: img15 }
     ]
   },
   {
