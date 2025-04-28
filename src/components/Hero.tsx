@@ -27,7 +27,7 @@ export function HeroHighlightDemo() {
           <span className="font-head">Hii, I am Dhiraj Gogoi</span>
           <br />
           <Highlight className="text-black font-body dark:text-white text-3xl">
-            Frontend Developer
+            Fullstack Developer
           </Highlight>
        
            <HoverBorderGradientDemo buttonText="About me"/> 
