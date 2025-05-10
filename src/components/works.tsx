@@ -5,6 +5,8 @@ import gem1 from "../img/works/gme1.png"
 import gem4 from "../img/works/gem4.png"
 import p1 from "../img/port/p1.png"
 import p2 from "../img/port/p2.png"
+import vid1 from "../img/vidtube/img1.png"
+import vid2 from "../img/vidtube/img2.png"
 import { TailwindcssButtons } from "./LiveLinkBtn";
 
 export function TimelineDemo() {
@@ -32,20 +34,20 @@ export function TimelineDemo() {
               </main>
           </p>
           <div className="grid grid-cols-2 gap-4 mb-5">
-            {/* <Image
-              src={gem1}
+            <Image
+              src={vid1}
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={gem4}
+              src={vid2}
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            /> */}
+            />
 
 
           </div>
@@ -53,6 +55,10 @@ export function TimelineDemo() {
           <TailwindcssButtons 
           link="https://github.com/dhiraj-001/Backend_01"
           text="Github Repository"
+          />
+            <TailwindcssButtons 
+          link="https://vidtube-frontend-gamma.vercel.app/"
+          text="Fontend"
           />
 
         </div>
