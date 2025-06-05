@@ -58,7 +58,7 @@ export function TimelineDemo() {
           />
             <TailwindcssButtons 
           link="https://vidtube-frontend-gamma.vercel.app/"
-          text="Fontend"
+          text="Live Preview"
           />
 
         </div>

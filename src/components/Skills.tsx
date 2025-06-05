@@ -152,9 +152,9 @@ const techSkills = [
 
 export function AnimatedTooltipPreview() {
   return (
-    <div id="skills" className="p-4 flex items-center flex-col w-full mt-5">
+    <div id="skills" className="p-4 flex items-center flex-col w-full mt-5 mb-10">
       <span className="font-head font-bold text-5xl">My Skills</span>
-      <div className="grid mdl:grid-cols-3 xlg:grid-flow-col gap-x-[13px] gap-y-0 sml:flex-row gap-5 mdl:gap-8 xl:gap-16 mt-16">
+      <div className="grid mdl:grid-cols-3 xlg:grid-flow-col gap-x-[13px] gap-y-0 sml:flex-row gap-5 mdl:gap-8 xl:gap-16 mt-16 ">
         {techSkills.map((skill, index) => (
           <div key={index}>
             <h2 className="font-head text-xl font-bold sml:h-20 h-4">{skill.category}</h2>
