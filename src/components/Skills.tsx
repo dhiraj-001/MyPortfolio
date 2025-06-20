@@ -16,6 +16,9 @@ import img12 from "../img/node.png";
 import img13 from "../img/express.png";
 import img14 from "../img/mysql.png";
 import img15 from "../img/mongo.png";
+import img16 from "../img/expo.png";
+import img17 from "../img/python.png";
+import { motion } from "framer-motion";
 
 // const languages = [
 //   {
@@ -103,56 +106,59 @@ import img15 from "../img/mongo.png";
 
 const techSkills = [
   {
-    category: "Frontend Development",
+    category: "Programming Languages",
     skills: [
-      { id: 1, name: "HTML", designation: "Advanced", image: img10 },
-      { id: 2, name: "CSS", designation: "Intermediate", image: img11 },
-      { id: 3, name: "JavaScript", designation: "Advanced", image: img9 }
+      { id: 1, name: "C", designation: "Advanced", image: img1 },
+      { id: 2, name: "C++", designation: "Intermediate", image: img2 },
+      { id: 3, name: "Python", designation: "Intermediate", image: img17 },
+      { id: 4, name: "JavaScript", designation: "Advanced", image: img9 }
     ]
   },
   {
-    category: "Backend Development",
+    category: "Frontend Technologies",
     skills: [
-      { id: 4, name: "Node.js", designation: "Backend Development", image: img12 },
-      { id: 5, name: "Express.js", designation: "Backend Development", image: img13 }
+      { id: 5, name: "HTML", designation: "Advanced", image: img10 },
+      { id: 6, name: "CSS", designation: "Intermediate", image: img11 },
+      { id: 7, name: "React.js & React Native", designation: "Frontend Framework", image: img8 },
+      { id: 8, name: "Next.js", designation: "Frontend Framework", image: img3 },
+      { id: 9, name: "Tailwind CSS", designation: "CSS Framework", image: img6 },
+      { id: 10, name: "Bootstrap", designation: "CSS Framework", image: img7 },
+      { id: 11, name: "Expo", designation: "App Development", image: img16 }
     ]
   },
   {
-    category: "Frameworks",
+    category: "Backend Technologies",
     skills: [
-      { id: 12, name: "Next.js", designation: "Frontend Framework", image: img3 },
-      { id: 13, name: "React.js", designation: "Frontend Framework", image: img8 },
-      { id: 14, name: "Tailwind CSS", designation: "CSS Framework", image: img6 },
-      { id: 15, name: "Bootstrap", designation: "CSS Framework", image: img7 }
+      { id: 12, name: "Node.js", designation: "Backend Development", image: img12 },
+      { id: 13, name: "Express.js", designation: "Backend Development", image: img13 }
     ]
   },
   {
     category: "Databases",
     skills: [
-      { id: 6, name: "MySQL", designation: "Databases", image: img14 },
-      { id: 7, name: "MongoDB", designation: "Databases", image: img15 }
+      { id: 14, name: "MySQL", designation: "Databases", image: img14 },
+      { id: 15, name: "MongoDB", designation: "Databases", image: img15 }
     ]
   },
   {
-    category: "Version Control & Collaboration",
+    category: "Version Control",
     skills: [
-      { id: 8, name: "Git", designation: "Version Control", image: img4 },
-      { id: 9, name: "GitHub", designation: "Collaboration", image: img5 }
+      { id: 16, name: "Git", designation: "Version Control", image: img4 },
+      { id: 17, name: "GitHub", designation: "Collaboration", image: img5 }
     ]
-  },
-  {
-    category: "General Programming Languages",
-    skills: [
-      { id: 10, name: "C", designation: "Advanced", image: img1 },
-      { id: 11, name: "C++", designation: "Intermediate", image: img2 }
-    ]
-  },
-  
+  }
 ];
 
 export function AnimatedTooltipPreview() {
   return (
-    <div id="skills" className="p-4 flex items-center flex-col w-full mt-5 mb-10">
+    <motion.div
+      id="skills"
+      className="p-4 flex items-center flex-col w-full mt-5 mb-10"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.6 }}
+      transition={{ duration: .7, ease: "easeInOut" }}
+    >
       <span className="font-head font-bold text-5xl">My Skills</span>
       <div className="grid mdl:grid-cols-3 xlg:grid-flow-col gap-x-[13px] gap-y-0 sml:flex-row gap-5 mdl:gap-8 xl:gap-16 mt-16 ">
         {techSkills.map((skill, index) => (
@@ -162,10 +168,8 @@ export function AnimatedTooltipPreview() {
               <AnimatedTooltip items={skill.skills} />
             </div>
           </div>
-        ))
-        }
-       
+        ))}
       </div>
-    </div >
+    </motion.div>
   );
 }

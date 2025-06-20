@@ -99,12 +99,7 @@ export const Header = () => {
         About me
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 font-body">
-        Hello! I&apos;m a B.Tech 2nd year student at Assam University, Silchar.
-        I&apos;m a passionate full-stack developer with expertise in the MERN stack
-        (MongoDB, Express.js, React, Node.js). I enjoy building responsive &amp;
-        user-friendly web applications, working across both front-end &amp; back-end.
-        Currently, I&apos;m learning mobile app development using React Native to create
-        efficient, cross-platform applications.
+        Hi! I&apos;m a B.Tech 2nd-year student at Assam University, Silchar, and a passionate full-stack developer with expertise in the MERN stack. I love building responsive, user-friendly web applications, seamlessly working across both front-end and back-end to deliver end-to-end solutions. I&apos;m also an app developer, currently expanding my skills in mobile app development using React Native to create efficient, cross-platform applications. Explore my projects to see how I bring ideas to life with clean code and intuitive designs.
 
       </p>
     </div>
