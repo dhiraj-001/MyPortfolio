@@ -1,26 +1,26 @@
+import React from 'react';
 import { motion } from "framer-motion";
 import ResumeCard from "./educrd";
-import { education } from "@/data/education";
 
-function EduCard() {
+interface EduCardProps {
+  title: string;
+  subTitle: string;
+  result: string;
+  des: string;
+}
+
+const EduCard: React.FC<EduCardProps> = ({ title, subTitle, result, des }) => {
   return (
     <motion.div
-      id="education"
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20 justify-center items-center"
     >
-      <div>
-
-        <div className="m-4 w-[300px] sml:w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col lg:flex-row gap-10">
-          {education.map((edu, i) => (
-            <ResumeCard
-              key={i}
-              title={edu.title}
-              subTitle={edu.subTitle}
-              result={edu.result}
-              des={edu.des}
-            />
-          ))}
-        </div>
+      <div className="m-4 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col lg:flex-row gap-10">
+        <ResumeCard
+          title={title}
+          subTitle={subTitle}
+          result={result}
+          des={des}
+        />
       </div>
     </motion.div>
   );

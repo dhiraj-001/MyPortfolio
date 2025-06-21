@@ -7,6 +7,7 @@ import { TimelineDemo } from "@/components/works";
 import { BackgroundBeamsDemo } from "@/components/contact";
 import FooterSection from "@/components/Footer";
 import { HeroParallaxDemo } from "@/components/Certificates";
+import { ThreeDCardDemo } from "@/components/AppDev";
 
 export default function Home() {
   // const toggleTheme = () =>{
@@ -20,6 +21,7 @@ export default function Home() {
   <HeroParallaxDemo/>
   <AnimatedTooltipPreview/>
   <TimelineDemo/>
+  {/* <ThreeDCardDemo/> */}
   <Education/>
   <BackgroundBeamsDemo/>
   <FooterSection/>
