@@ -26,16 +26,16 @@ function Education() {
           My educational qualifications
         </motion.div>
       </div>
-      <div className="relative w-full max-w-4xl overflow-x-hidden">
-        <div className='edu_cards flex flex-col items-center gap-8 px-4'>
+      
+        <div className='edu_cards flex flex-col items-center gap-8 px-4 '>
           {education.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: 500 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2, ease: "easeOut" }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.2, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
-              className="w-full"
+              className="w-full max-w-4xl"
             >
               <EduCard 
                 title={item.title}
@@ -45,7 +45,7 @@ function Education() {
               />
             </motion.div>
           ))}
-        </div>
+ 
       </div>
     </div>
   )

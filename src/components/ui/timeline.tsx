@@ -124,14 +124,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10"
       >
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-4xl font-head font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl"
         >
@@ -140,7 +140,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <motion.p 
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-neutral-700 dark:text-neutral-300 text-sm font-body md:text-base max-w-sm"
         >
