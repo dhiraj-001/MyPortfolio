@@ -16,7 +16,7 @@ export function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "Frontend Development Certificate",
+    title: "Frontend Development Certificates",
     link: "",
     thumbnail: frontend.src,
   },

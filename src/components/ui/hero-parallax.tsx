@@ -94,15 +94,23 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white font-head">
+    <motion.div className="max-w-7xl relative mx-auto py-20 md:py-44 px-4 w-full  left-0 top-0">
+      <motion.h1
+      initial={{opacity:0, x:-300}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:0.6, ease:"circOut"}}
+      className="text-2xl md:text-7xl font-bold dark:text-white font-head">
         About me
-      </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 font-body">
+      </motion.h1>
+      <motion.p
+       initial={{opacity:0, x:300}}
+       whileInView={{opacity:1, x:0}}
+       transition={{duration:0.6, ease:"circOut"}}
+      className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 font-body">
         Hi! I&apos;m a B.Tech 2nd-year student at Assam University, Silchar, and a passionate full-stack developer with expertise in the MERN stack. I love building responsive, user-friendly web applications, seamlessly working across both front-end and back-end to deliver end-to-end solutions. I&apos;m also an app developer, currently expanding my skills in mobile app development using React Native to create efficient, cross-platform applications. Explore my projects to see how I bring ideas to life with clean code and intuitive designs.
 
-      </p>
-    </div>
+      </motion.p>
+    </motion.div>
   );
 };
 
