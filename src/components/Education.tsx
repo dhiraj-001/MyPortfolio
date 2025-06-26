@@ -12,7 +12,7 @@ function Education() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
-          className="text-4xl font-head font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl"
+          className="text-2xl md:text-4xl font-head font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl"
         >
           Education
         </motion.h2>
@@ -26,24 +26,26 @@ function Education() {
           My educational qualifications
         </motion.div>
       </div>
-      <div className='edu_cards flex flex-col items-center gap-8 px-4'>
-        {education.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: 500 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-100px" }}
-            className="w-full max-w-4xl"
-          >
-            <EduCard 
-              title={item.title}
-              subTitle={item.subTitle}
-              result={item.result}
-              des={item.des}
-            />
-          </motion.div>
-        ))}
+      <div className="relative w-full max-w-4xl overflow-x-hidden">
+        <div className='edu_cards flex flex-col items-center gap-8 px-4'>
+          {education.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 500 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="w-full"
+            >
+              <EduCard 
+                title={item.title}
+                subTitle={item.subTitle}
+                result={item.result}
+                des={item.des}
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   )

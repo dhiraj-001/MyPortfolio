@@ -65,7 +65,7 @@ export function BackgroundBeamsDemo() {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.5, ease: "easeOut" }}
              viewport={{ once: true, margin: "-100px" }}
-            className="text-4xl font-semibold text-white font-head">Get in Touch</motion.h1>
+            className="text-2xl md:text-4xl font-semibold text-white font-head">Get in Touch</motion.h1>
             <motion.p
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}

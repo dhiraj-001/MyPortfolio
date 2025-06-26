@@ -106,7 +106,7 @@ export const Header = () => {
        initial={{opacity:0, x:300}}
        whileInView={{opacity:1, x:0}}
        transition={{duration:0.6, ease:"circOut"}}
-      className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 font-body">
+      className="max-w-2xl text-base md:text-xl text-md mt-8 dark:text-neutral-200 font-body">
         Hi! I&apos;m a B.Tech 2nd-year student at Assam University, Silchar, and a passionate full-stack developer with expertise in the MERN stack. I love building responsive, user-friendly web applications, seamlessly working across both front-end and back-end to deliver end-to-end solutions. I&apos;m also an app developer, currently expanding my skills in mobile app development using React Native to create efficient, cross-platform applications. Explore my projects to see how I bring ideas to life with clean code and intuitive designs.
 
       </motion.p>

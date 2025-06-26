@@ -20,7 +20,7 @@ export function AppDev() {
         className="w-full overflow-hidden relative h-full rounded-2xl p-10    border-2 bg-[#1d157a42] border-white  backdrop-blur-2xl">
           <div className="w-full flex flex-col md:flex-row">
             <div className="md:w-1/2 w-full">
-              <div className="flex flex-row gap-3 font-bold items-center text-xl md:text-4xl">
+              <div className="flex flex-row gap-3 font-bold items-center text-xl md:text-2xl lg:text-4xl">
                 <img src={logo.src} alt="" className="w-12 h-12 rounded-md shadow-sm shadow-slate-300" />
                 <h3>My Tasks</h3>
               </div>
@@ -64,7 +64,7 @@ export function AppDev() {
          className="w-full overflow-hidden relative h-full rounded-2xl p-10    border-2 bg-[#1d157a42] border-white  backdrop-blur-2xl">
           <div className="w-full flex flex-col md:flex-row">
             <div className="md:w-1/2 w-full">
-              <div className="flex flex-row gap-3 font-bold items-center text-xl md:text-4xl">
+              <div className="flex flex-row gap-3 font-bold items-center text-xl md:text-2xl lg:text-4xl">
                 <img src={logop.src} alt="" className="w-12 h-12 rounded-md shadow-sm shadow-slate-300" />
                 <h3>Password Generator</h3>
               </div>
@@ -106,7 +106,7 @@ export function AppDev() {
   return (
     <div className="w-full bg-white dark:bg-secbg font-sans md:px-10 py-10">
       <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-4xl font-head font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl">
+        <h2 className="text-2xl md:text-4xl font-head font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl">
           App Development
         </h2>
         <div className="flex flex-row gap-4">
